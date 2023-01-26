@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafió #1 Alura - Encriptador Web</title>
+    <link rel="stylesheet" type="text/css" href="./reset.css" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a href="https://www.aluracursos.com/">
+        <img src="assets/LogoAlura.svg" alt="Logo de Alura" class="logo" />
+      </a>
+    </header>
+    <main>
+      <section class="inArea">
+        <textarea
+          name="inTextBox"
+          id="inTextBox"
+          placeholder="Ingrese el texto aquí..."
+          class="inTextBox"></textarea>
+
+        <div class="tip">
+          <p>
+            (Solo se permiten palabras en minúsculas y sin acentos de ningún
+            tipo)
+          </p>
+        </div>
+        <div class="buttonContainer">
+          <button class="button" onclick="encrypt()">Encriptar</button>
+          <button class="button buttonDark" onclick="decrypt()">
+            Des-encriptar
+          </button>
+        </div>
+      </section>
+      <section class="outArea">
+        <textarea
+          class="outAreaTextBox"
+          name="outTextBox"
+          id="outTextBox"
+          cols="30"
+          rows="10"
+          placeholder="Aquí aparecerá su texto encriptado"></textarea>
+        <button id="copyBtn" class="button" onclick="clipboardCopy()">
+          Copiar
+        </button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h1>
+          Pagina creada para el challenge #1 del programa de Oracle +
+          <a href="http://https://www.aluracursos.com/"> Alura </a>
+        </h1>
+      </div>
+      <div>&copy Mario Adrian Turk</div>
+      <div class="links">
+        <div class="link">
+          <a href="https://github.com/AdrianTurk">
+            <img src="assets/github-mark-white.png" alt="GitHub link logo"
+          /></a>
+        </div>
+        <div class="link">
+          <a href="mailto://ma_turk@yahoo.com">
+            <img src="assets/email (1).svg" alt="Email link logo"
+          /></a>
+        </div>
+        <div class="link">
+          <a href="https://www.linkedin.com/in/AdrianTurk">
+            <img id="linkedinLogo" src="assets/transparent-linkedin-icon-linkedin-logo-icon-logo-icon-5d8783a3acba15.6616102315691621477075.png" alt="GitHub linkedIn link logo"
+          /></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
